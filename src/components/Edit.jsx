@@ -80,8 +80,8 @@ function Edit(props)
           placeholder="Title"
           value={editedNote.title}
         />
-        {warning.title && <p class="warning">This field cant be empty.</p>}
-        {sameTitle && <p class="warning">This title already exits please try another one.</p>}
+        {warning.title && <p className="warning">This field cant be empty.</p>}
+        {sameTitle && <p className="warning">This title already exits please try another one.</p>}
         <textarea
           onChange={handleChange}
           name="content"
@@ -89,7 +89,7 @@ function Edit(props)
           rows="3"
           value={editedNote.content}
         />
-        {warning.content && <p class="warning">This field cant be empty.</p>}
+        {warning.content && <p className="warning">This field cant be empty.</p>}
         <button onClick={handleSubmit}>Save</button>
       </form>
        </div>
